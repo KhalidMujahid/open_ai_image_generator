@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "openai": "^3.1.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "name": "Open AI",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "Khalid Zikirullah",
+  "license": "MIT",
+  "description": ""
+}
