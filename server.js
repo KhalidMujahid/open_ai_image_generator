@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.header("Access-Control-Allow-Origin", "https://text-image-generator.netlify.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Content-Type,Origin,Accept,X-Requested-With,Authorization"
