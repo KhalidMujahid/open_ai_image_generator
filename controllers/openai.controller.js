@@ -23,3 +23,21 @@ module.exports.generate = async (req, res, next) => {
     console.log(error);
   }
 };
+
+//cha
+module.exports.chat = async (req, res, next) => {
+  try {
+    const { prompt } = req.body;
+
+    const response = await openai.chat.completions.create({
+      messag: prompt,
+      model: "gpt-3.5-turbo"
+    });
+    return res.status(200).send({
+      message: response,
+    });
+  } catch (error) {
+    next(error);
+    console.log(error);
+  }
+};
